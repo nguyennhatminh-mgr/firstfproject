@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<div class="tong">
+    <% recordset.forEach(element => { %>
+        <div class="itemEmployee">
+            <h1 class="mauxanh"><%=element.fname+" "+element.lname+" "+element.ssn%></h1>
+            <h2><%=element.bdate%></h2>
+            <button class="btn1" onclick="myclick()">Click</button>
+        </div>
+    <% }); %>
+    <button class="btn2" onclick="myclick()">Delete</button>
+    <a href="/delete/111111111">Delete</a>
+    <a href="/dsdepartment">Refresh</a>
+</div>
+
+<script src="app.js"></script>
